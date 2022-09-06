@@ -19,7 +19,7 @@ function App() {
   }
   return (
     <div className="bg-very-dark-blue h-screen w-screen flex justify-center items-center">
-      <div className="bg-gradient-to-t from-very-dark-blue to-dark-blue w-96 p-7 h-fit flex flex-col gap-6 justify-evenly border rounded-2xl">
+      <div className="bg-gradient-to-t from-very-dark-blue to-dark-blue w-80 sm:w-96 p-7 h-fit flex flex-col gap-6 justify-evenly border rounded-2xl">
         {!submited ? (
           <>
             <div className="bg-dark-blue shadow-sm rounded-full w-10 min-w-10 h-10 flex justify-center items-center m-0">
@@ -30,7 +30,7 @@ function App() {
               Please let us know how we did with your support request. All
               feedback is appreciated to help us improve our offering!
             </p>
-            <ul className="flex flex-row w-full justify-between gap-4">
+            <ul className="flex flex-row w-full justify-between sm:gap-4 gap-2">
               {rating.map((item) => {
                 return (
                   <li key={item.id}>
@@ -82,19 +82,4 @@ function App() {
   );
 }
 
-// function Numbers({ array }) {
-//   return (
-//     <>
-
-//     </>
-//   );
-// }
-
 export default App;
-
-// <div
-//             key={key}
-//             className="bg-dark-blue hover:bg-medium-grey hover:text-white selection:bg-primary-orange selection:text-white text-light-Grey rounded-full w-12 h-12 flex text-sm justify-center items-center m-0"
-//           >
-//             {item}
-//           </div>
